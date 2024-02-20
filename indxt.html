@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+       tailwind.config = {
+      theme: {
+        screens: {
+      'sm': '240px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+        extend: {
+          colors: {
+            naman: 'green',
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h2 class="text-naman text-4xl text-center py-5">Learing Tailwind</h2>
+        <div class="grid lg:grid-cols-4 gap-4 mx-auto sm:grid-cols-2 ">
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+          <div class="bg-[blue] text-center">Naman</div>
+        </div>
+    </header>
+    
+</body>
+</html>
